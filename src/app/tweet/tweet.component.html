@@ -1,0 +1,9 @@
+<h4>Liked tweets:</h4>
+
+  <b>User:</b> {{tweets.myAuthor}} (@{{tweets.myUserID}})
+  <br/>
+  <b>Tweet:</b> {{tweets.myTweet | json}} (Detected Language: {{tweets.detectedLanguage | json}})
+  <br/>
+  <b>Translated Tweet:</b> {{tweets.translatedText | json}} (Translated Language: {{tweets.targetLang | json}})
+  <br/><br/><br/>
+  <a routerLink="/home">Translate in Another Language</a>
